@@ -73,6 +73,13 @@ TEMPLATES = [
     },
 ]
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10  # nombre d’éléments par page
+}
+
+
 WSGI_APPLICATION = 'leloProgram.wsgi.application'
 
 
